@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ -z ${GTEXT_HOME+x} ]
+then python ./buildtest.py $@
+else python "$GTEST_HOME/buildtest.py" $@
+fi

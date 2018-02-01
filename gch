@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ -z ${GTEST_HOME+x} ]
+then echo "Gtest home not found"
+else echo "Gtest found at '$GTEST_HOME'" 
+fi
