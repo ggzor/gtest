@@ -1,0 +1,1 @@
+python %GTEST_HOME%\run.py %*
