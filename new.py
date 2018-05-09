@@ -4,7 +4,7 @@ from os import getcwd
 from shutil import copy
 
 def make_new(filename):
-    template = expandvars("$GTEST_HOME/ctemplate.c")
+    template = join(expandvars("$GTEST_HOME"), "ctemplate.c")
 
     if not filename.endswith(".c"):
         filename += ".c"
