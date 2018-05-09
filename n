@@ -1,5 +1,0 @@
-#!/bin/bash
-if [ -z ${GTEST_HOME+x} ]
-then python ./new.py $@
-else python "$GTEST_HOME/new.py" $@
-fi
