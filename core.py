@@ -1,10 +1,16 @@
-from os import listdir
+from os import listdir, system as execute
 from re import compile, match, search
 from subprocess import call
 from sys import argv
+from platform import system
 
 def clear():
-    call(["clear"])
+    clear_command = "clear"
+
+    if system() == "Windows":
+        clear_command = "cls"
+
+    execute(clear_command)
 
 def clear_if_not_explicit(options):
     if not(options and "-exp" in options):
